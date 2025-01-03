@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Comfyui图狗管理器插件安装页面功能介绍</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 2px solid #4a4a4a;
+            padding-bottom: 10px;
+        }
+        .feature-section {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .feature-title {
+            background-color: #0078D4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .step {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #0078D4;
+        }
+        .warning {
+            background-color: #fff3e0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #ff9800;
+        }
+        .tip {
+            background-color: #e1f5fe;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #03a9f4;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Comfyui图狗管理器插件安装页面功能介绍</h1>
+
+        <div class="feature-section">
+            <div class="feature-title">功能一：手动安装插件</div>
+            
+            <div class="step">
+                <h3>📝 功能说明</h3>
+                <ul>
+                    <li>通过Git仓库地址直接安装插件</li>
+                    <li>支持GitHub和GitLab仓库</li>
+                    <li>自动处理依赖关系</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>🔍 使用步骤</h3>
+                <ol>
+                    <li>在顶部输入框中输入Git仓库地址</li>
+                    <li>点击"安装"按钮</li>
+                    <li>等待克隆完成</li>
+                    <li>如有依赖，选择是否安装依赖</li>
+                </ol>
+            </div>
+
+            <div class="warning">
+                <h3>⚠️ 注意事项</h3>
+                <ul>
+                    <li>确保输入的Git地址正确</li>
+                    <li>需要先配置ComfyUI路径</li>
+                    <li>安装过程中请勿关闭程序</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <div class="feature-title">功能二：插件库浏览和搜索</div>
+            
+            <div class="step">
+                <h3>📝 功能说明</h3>
+                <ul>
+                    <li>浏览所有可用的ComfyUI插件</li>
+                    <li>支持关键词搜索</li>
+                    <li>显示插件详细信息</li>
+                    <li>实时显示安装状态</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>🔍 搜索功能</h3>
+                <ul>
+                    <li>在搜索框输入关键词</li>
+                    <li>支持按插件名称搜索</li>
+                    <li>支持按描述内容搜索</li>
+                    <li>搜索结果实时显示</li>
+                </ul>
+            </div>
+
+            <div class="tip">
+                <h3>💡 筛选功能</h3>
+                <ul>
+                    <li>全部：显示所有插件</li>
+                    <li>未安装：仅显示未安装的插件</li>
+                    <li>已安装：仅显示已安装的插件</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <div class="feature-title">功能三：插件管理</div>
+            
+            <div class="step">
+                <h3>📝 安装功能</h3>
+                <ul>
+                    <li>一键安装插件</li>
+                    <li>自动检测并安装依赖</li>
+                    <li>支持重新安装</li>
+                    <li>显示安装进度和状态</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 删除功能</h3>
+                <ul>
+                    <li>一键删除已安装的插件</li>
+                    <li>自动清理插件文件</li>
+                    <li>删除前确认提示</li>
+                </ul>
+            </div>
+
+            <div class="warning">
+                <h3>⚠️ 注意事项</h3>
+                <ul>
+                    <li>删除前请确保插件未在使用中</li>
+                    <li>删除操作不可恢复</li>
+                    <li>部分插件可能需要重启ComfyUI</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <div class="feature-title">功能四：插件库更新</div>
+            
+            <div class="step">
+                <h3>📝 功能说明</h3>
+                <ul>
+                    <li>更新插件库列表</li>
+                    <li>获取最新的插件信息</li>
+                    <li>自动同步插件状态</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>🔍 使用步骤</h3>
+                <ol>
+                    <li>点击"更新插件库"按钮</li>
+                    <li>等待更新完成</li>
+                    <li>查看最新的插件列表</li>
+                </ol>
+            </div>
+
+            <div class="tip">
+                <h3>💡 使用建议</h3>
+                <ul>
+                    <li>定期更新插件库以获取最新插件</li>
+                    <li>更新后检查已安装插件的新版本</li>
+                    <li>关注新增插件的功能说明</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <div class="feature-title">插件卡片信息说明</div>
+            
+            <div class="step">
+                <h3>📝 显示信息</h3>
+                <ul>
+                    <li>插件名称：显示在卡片顶部</li>
+                    <li>作者信息：显示插件作者</li>
+                    <li>描述信息：介绍插件功能</li>
+                    <li>仓库链接：插件的源代码地址</li>
+                    <li>安装状态：显示是否已安装</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>🔍 操作按钮</h3>
+                <ul>
+                    <li>安装按钮：安装新插件</li>
+                    <li>删除按钮：移除已安装的插件</li>
+                    <li>已安装标识：显示插件已安装状态</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="warning">
+            <h2>📌 通用注意事项</h2>
+            <ul>
+                <li>首次使用前请先配置ComfyUI路径</li>
+                <li>确保网络连接稳定</li>
+                <li>大型插件安装可能需要较长时间</li>
+                <li>建议定期备份重要的工作流</li>
+                <li>注意查看插件的兼容性说明</li>
+            </ul>
+        </div>
+
+        <div class="tip">
+            <h2>🌟 最佳实践建议</h2>
+            <ul>
+                <li>安装插件前先阅读描述和要求</li>
+                <li>定期更新插件库获取最新内容</li>
+                <li>遇到问题时查看控制台输出</li>
+                <li>重要更新前先测试兼容性</li>
+                <li>保持插件的及时更新和维护</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 

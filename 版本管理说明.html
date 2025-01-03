@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Comfyui图狗管理器版本管理页面功能介绍</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 2px solid #4a4a4a;
+            padding-bottom: 10px;
+        }
+        .feature-section {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .feature-title {
+            background-color: #0078D4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .step {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #0078D4;
+        }
+        .warning {
+            background-color: #fff3e0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #ff9800;
+        }
+        .tip {
+            background-color: #e1f5fe;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #03a9f4;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Comfyui图狗管理器版本管理页面功能介绍</h1>
+
+        <div class="feature-section">
+            <div class="feature-title">功能一：顶部工具栏</div>
+            
+            <div class="step">
+                <h3>📝 搜索功能</h3>
+                <ul>
+                    <li>支持实时搜索版本信息</li>
+                    <li>可搜索版本号、更新内容和日期</li>
+                    <li>显示搜索结果数量统计</li>
+                    <li>支持多关键词组合搜索</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 版本定位</h3>
+                <ul>
+                    <li>一键定位当前使用的版本</li>
+                    <li>平滑滚动动画效果</li>
+                    <li>高亮显示当前版本信息</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 仓库信息</h3>
+                <ul>
+                    <li>显示当前版本号和日期</li>
+                    <li>点击可直接访问ComfyUI仓库</li>
+                    <li>自动识别远程仓库地址</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <div class="feature-title">功能二：版本列表</div>
+            
+            <div class="step">
+                <h3>📝 版本加载</h3>
+                <ul>
+                    <li>支持加载全部版本历史</li>
+                    <li>支持仅加载近期版本（最近300个）</li>
+                    <li>分批加载优化性能</li>
+                    <li>显示加载进度和状态</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 版本卡片</h3>
+                <ul>
+                    <li>显示版本号和提交时间</li>
+                    <li>显示更新内容说明</li>
+                    <li>当前版本特殊标记</li>
+                    <li>支持版本切换操作</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 版本切换</h3>
+                <ul>
+                    <li>支持切换到任意历史版本</li>
+                    <li>自动处理模型文件夹链接</li>
+                    <li>显示切换进度和状态</li>
+                    <li>自动记录切换历史</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <div class="feature-title">功能三：版本管理</div>
+            
+            <div class="step">
+                <h3>📝 获取更新信息</h3>
+                <ul>
+                    <li>从远程仓库获取最新版本信息</li>
+                    <li>自动更新本地版本记录</li>
+                    <li>支持离线查看历史版本</li>
+                    <li>显示获取进度和状态</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 更新到最新版本</h3>
+                <ul>
+                    <li>一键更新到最新版本</li>
+                    <li>自动处理分支切换</li>
+                    <li>显示更新进度和状态</li>
+                    <li>支持更新确认机制</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 历史版本切换</h3>
+                <ul>
+                    <li>显示最近切换的版本记录</li>
+                    <li>支持快速切换到历史版本</li>
+                    <li>记录版本切换时间</li>
+                    <li>最多保存10条切换记录</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="warning">
+            <h2>⚠️ 注意事项</h2>
+            <ul>
+                <li>首次使用需要安装Git</li>
+                <li>确保ComfyUI路径正确配置</li>
+                <li>版本切换前请保存重要文件</li>
+                <li>更新操作需要网络连接</li>
+                <li>切换版本可能影响模型文件夹链接</li>
+            </ul>
+        </div>
+
+        <div class="tip">
+            <h2>💡 使用建议</h2>
+            <ul>
+                <li>定期获取更新信息</li>
+                <li>重要更新前先测试新版本</li>
+                <li>保持稳定版本的记录</li>
+                <li>关注更新内容说明</li>
+                <li>合理使用版本切换功能</li>
+            </ul>
+        </div>
+
+        <div class="feature-section">
+            <div class="feature-title">Git安装说明</div>
+            
+            <div class="step">
+                <h3>📝 Windows系统</h3>
+                <ul>
+                    <li>支持自动下载安装</li>
+                    <li>显示下载和安装进度</li>
+                    <li>自动配置基本设置</li>
+                    <li>安装完成后需要重启</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 其他系统</h3>
+                <ul>
+                    <li>提供官方下载链接</li>
+                    <li>支持手动安装方式</li>
+                    <li>自动检测安装状态</li>
+                </ul>
+            </div>
+
+            <div class="warning">
+                <h3>⚠️ 安装提示</h3>
+                <ul>
+                    <li>需要管理员权限</li>
+                    <li>确保网络连接稳定</li>
+                    <li>按照提示完成安装</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Comfyui图狗管理器主页面功能介绍</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            border-bottom: 2px solid #4a4a4a;
+            padding-bottom: 10px;
+        }
+        .feature-section {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .feature-title {
+            background-color: #0078D4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .step {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #0078D4;
+        }
+        .warning {
+            background-color: #fff3e0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #ff9800;
+        }
+        .tip {
+            background-color: #e1f5fe;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #03a9f4;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Comfyui图狗管理器主页面功能介绍</h1>
+
+        <div class="feature-section">
+            <div class="feature-title">功能一：顶部横幅</div>
+            
+            <div class="step">
+                <h3>📝 界面设计</h3>
+                <ul>
+                    <li>美观的顶部背景图片</li>
+                    <li>自适应宽度显示</li>
+                    <li>固定高度200像素</li>
+                    <li>保持图片比例的同时填充显示</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <div class="feature-title">功能二：快捷目录访问</div>
+            
+            <div class="step">
+                <h3>📝 相目录</h3>
+                <ul>
+                    <li>快速打开ComfyUI主目录</li>
+                    <li>自动检查路径有效性</li>
+                    <li>支持跨平台访问</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 插件目录</h3>
+                <ul>
+                    <li>直接访问custom_nodes文件夹</li>
+                    <li>管理自定义节点和插件</li>
+                    <li>自动创建目录（如不存在）</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 模型目录</h3>
+                <ul>
+                    <li>快速访问models文件夹</li>
+                    <li>管理各类模型文件</li>
+                    <li>支持软链接目录访问</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 工作流目录</h3>
+                <ul>
+                    <li>访问workflows保存目录</li>
+                    <li>管理工作流文件</li>
+                    <li>支持自定义工作流路径</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 输入输出目录</h3>
+                <ul>
+                    <li>快速访问input文件夹</li>
+                    <li>快速访问output文件夹</li>
+                    <li>便捷管理图片资源</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <div class="feature-title">功能三：纯净启动</div>
+            
+            <div class="step">
+                <h3>📝 启动配置</h3>
+                <ul>
+                    <li>支持自定义Python解释器</li>
+                    <li>支持自定义启动脚本</li>
+                    <li>支持自定义启动参数</li>
+                    <li>自动处理路径格式</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 启动选项</h3>
+                <ul>
+                    <li>支持便携版Python</li>
+                    <li>支持嵌入版Python</li>
+                    <li>自动添加standalone参数</li>
+                    <li>保持命令行窗口显示</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 启动命令</h3>
+                <ul>
+                    <li>自动解析启动参数</li>
+                    <li>正确处理路径引号</li>
+                    <li>支持复杂启动选项</li>
+                    <li>显示启动过程信息</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="warning">
+            <h2>⚠️ 注意事项</h2>
+            <ul>
+                <li>首次使用需要配置ComfyUI路径</li>
+                <li>首次使用需要配置Python解释器</li>
+                <li>确保目录具有访问权限</li>
+                <li>注意路径中的特殊字符</li>
+                <li>确保Python环境完整性</li>
+            </ul>
+        </div>
+
+        <div class="tip">
+            <h2>💡 使用建议</h2>
+            <ul>
+                <li>使用相对路径配置更便携</li>
+                <li>定期整理工作流文件</li>
+                <li>及时清理临时文件</li>
+                <li>合理组织模型目录</li>
+                <li>保持插件目录整洁</li>
+            </ul>
+        </div>
+
+        <div class="feature-section">
+            <div class="feature-title">界面设计说明</div>
+            
+            <div class="step">
+                <h3>📝 布局设计</h3>
+                <ul>
+                    <li>简洁现代的深色主题</li>
+                    <li>清晰的按钮布局</li>
+                    <li>醒目的启动按钮</li>
+                    <li>合理的空间利用</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 交互设计</h3>
+                <ul>
+                    <li>按钮悬停效果</li>
+                    <li>清晰的视觉反馈</li>
+                    <li>直观的操作方式</li>
+                    <li>友好的错误提示</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📝 响应式设计</h3>
+                <ul>
+                    <li>自适应窗口大小</li>
+                    <li>灵活的布局调整</li>
+                    <li>合理的组件间距</li>
+                    <li>优雅的界面缩放</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
