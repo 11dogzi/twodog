@@ -3,7 +3,7 @@
 
 更纯净的Comfyui启动器    
 推荐配合官方web版本使用    
-[Comfyui官方下载链接]((https://github.com/comfyanonymous/ComfyUI/releases/latest/download/ComfyUI_windows_portable_nvidia.7z))      
+[官方下载链接]([https://space.bilibili.com/19723588?spm_id_from=333.1007.0.0](https://github.com/comfyanonymous/ComfyUI/releases/latest/download/ComfyUI_windows_portable_nvidia.7z))    
 首次使用请先设置Comfyui路径与python解释器路径点击保存设置    
 通过多种一键设置在不改变 Comfyui 的原生项目代码基础上进行文件/功能的设置管理    
 以下是部分功能说明：    
