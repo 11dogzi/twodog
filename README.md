@@ -1,9 +1,9 @@
-##2025/1/03    
+ ## 2025/1/03    
 测试版发布    
 
 更纯净的Comfyui启动器    
 推荐配合官方web版本使用    
-[Comfyui官方下载链接]([https://github.com/11dogzi/Comfyui-ergouzi-Nodes](https://github.com/comfyanonymous/ComfyUI/releases/latest/download/ComfyUI_windows_portable_nvidia.7z))      
+[Comfyui官方下载链接]((https://github.com/comfyanonymous/ComfyUI/releases/latest/download/ComfyUI_windows_portable_nvidia.7z))      
 首次使用请先设置Comfyui路径与python解释器路径点击保存设置    
 通过多种一键设置在不改变 Comfyui 的原生项目代码基础上进行文件/功能的设置管理    
 以下是部分功能说明：    
@@ -23,7 +23,7 @@
 14. 开源工具使用    
 15. 开源教程查看    
 
-##2025/1/04    
+ ## 2025/1/04    
 页面展示    
 ![灵仙儿和二狗子](页面展示/主页.jpg "主页")   
 关注我们/获取更多信息    
